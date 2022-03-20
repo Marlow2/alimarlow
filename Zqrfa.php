@@ -2,7 +2,7 @@
 ####@php_aba###
  ###@armof###
 ob_start();
-define('API_KEY', 'توكن');
+define('API_KEY', '5190758916:AAHlx6wpj5E8aXxmgHyVx8E3BXTzrRtj7zA');
 echo "https://api.telegram.org/bot" . API_KEY . "/setwebhook?url=" . $_SERVER['SERVER_NAME'] . "" . $_SERVER['SCRIPT_NAME'];
 function bot($method,$datas=[]){
     $ok = http_build_query($datas);
@@ -33,7 +33,7 @@ $name = $update->message->from->first_name;
 $from_id = $php_aba->from->id;
 $data = $update->callback_query->data;
 $f_ppp2 = $update->callback_query->message->chat->id;
-$admin = "296369326"; #ايديك
+$admin = "5233166312"; #ايديك
 $ok = file_get_contents("ARMOF.txt");
 $ok0 = file_get_contents("ARMOF0.txt");
 $ok1= file_get_contents("ARMOF1.txt");
